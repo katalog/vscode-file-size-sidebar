@@ -1,5 +1,5 @@
 {
-  "name": "file-size-explorer",
+  "name": "file-size-sidebar",
   "displayName": "File Size Explorer",
   "description": "Sidebar view that lists workspace files and folders sorted by size",
   "version": "0.1.0",
