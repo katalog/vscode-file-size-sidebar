@@ -1,0 +1,117 @@
+{
+  "name": "file-size-explorer",
+  "displayName": "File Size Explorer",
+  "description": "Sidebar view that lists workspace files and folders sorted by size",
+  "version": "0.1.0",
+  "publisher": "katalog",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/katalog/vscode-file-size-explorer"
+  },
+  "engines": {
+    "vscode": "^1.107.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "file size",
+    "explorer",
+    "sort",
+    "disk usage",
+    "sidebar"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "fileSizeExplorer",
+          "title": "File Sizes",
+          "icon": "resources/file-size-icon.svg"
+        }
+      ]
+    },
+    "views": {
+      "fileSizeExplorer": [
+        {
+          "id": "fileSizeExplorer.view",
+          "name": "File Sizes"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "fileSizeExplorer.refresh",
+        "title": "Refresh",
+        "icon": "$(refresh)"
+      },
+      {
+        "command": "fileSizeExplorer.toggleSortOrder",
+        "title": "Toggle Sort Order",
+        "icon": "$(sort-precedence)"
+      }
+    ],
+    "menus": {
+      "view/title": [
+        {
+          "command": "fileSizeExplorer.refresh",
+          "when": "view == fileSizeExplorer.view",
+          "group": "navigation@1"
+        },
+        {
+          "command": "fileSizeExplorer.toggleSortOrder",
+          "when": "view == fileSizeExplorer.view",
+          "group": "navigation@2"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "File Size Explorer",
+      "properties": {
+        "fileSizeExplorer.sortDescending": {
+          "type": "boolean",
+          "default": true,
+          "description": "Sort largest files and folders first."
+        },
+        "fileSizeExplorer.excludeNames": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": [
+            "node_modules",
+            ".git",
+            "out",
+            "dist",
+            "build",
+            ".next",
+            "target",
+            "bin",
+            "obj"
+          ],
+          "description": "File and folder names to skip entirely when computing sizes."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.107.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "typescript-eslint": "^8.48.1",
+    "eslint": "^9.39.1",
+    "typescript": "^5.9.3",
+    "@vscode/test-cli": "^0.0.12",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}
