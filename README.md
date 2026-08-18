@@ -37,8 +37,8 @@ Very large workspaces (tens of thousands of files) can take a moment to compute 
 Not yet published on the VS Code Marketplace. To build and run it from source:
 
 ```bash
-git clone https://github.com/katalog/vscode-file-size-explorer.git
-cd vscode-file-size-explorer
+git clone https://github.com/katalog/vscode-file-size-sidebar.git
+cd vscode-file-size-sidebar
 npm install
 npm run compile
 ```

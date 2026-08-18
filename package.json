@@ -6,7 +6,7 @@
   "publisher": "katalog",
   "repository": {
     "type": "git",
-    "url": "https://github.com/katalog/vscode-file-size-explorer"
+    "url": "https://github.com/katalog/vscode-file-size-sidebar"
   },
   "engines": {
     "vscode": "^1.107.0"
