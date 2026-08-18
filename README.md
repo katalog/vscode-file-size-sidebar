@@ -47,7 +47,7 @@ Then open the folder in VS Code and press `F5` to launch an Extension Developmen
 
 ## Release Notes
 
-### 0.1.0
+### 0.9.0
 
 Initial release: sorted file-size sidebar view with folder aggregation, sort toggle, and auto-refresh.
 
