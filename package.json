@@ -2,7 +2,7 @@
   "name": "file-size-sidebar",
   "displayName": "File Size Explorer",
   "description": "Sidebar view that lists workspace files and folders sorted by size",
-  "version": "0.9.0",
+  "version": "1.0.0",
   "publisher": "katalog",
   "repository": {
     "type": "git",
