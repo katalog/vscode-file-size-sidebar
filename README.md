@@ -45,16 +45,6 @@ npm run compile
 
 Then open the folder in VS Code and press `F5` to launch an Extension Development Host with the extension active, or package it yourself with [`vsce`](https://github.com/microsoft/vscode-vsce) and install the resulting `.vsix` via **Extensions: Install from VSIX...**.
 
-## Release Notes
-
-### 1.0.0
-
-Stable release — no functional changes from 0.9.0.
-
-### 0.9.0
-
-Initial release: sorted file-size sidebar view with folder aggregation, sort toggle, and auto-refresh.
-
 ## License
 
 See [LICENSE](LICENSE).
