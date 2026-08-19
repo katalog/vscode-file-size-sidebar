@@ -34,7 +34,9 @@ Very large workspaces (tens of thousands of files) can take a moment to compute 
 
 ## Installation
 
-Not yet published on the VS Code Marketplace. To build and run it from source:
+Search for **File Size Explorer** in the VS Code Extensions view, or install it from the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=katalog.file-size-sidebar).
+
+To build and run it from source instead:
 
 ```bash
 git clone https://github.com/katalog/vscode-file-size-sidebar.git
